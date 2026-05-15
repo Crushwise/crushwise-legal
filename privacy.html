@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité — CrushWise</title>
+  <style>
+    :root {
+      --accent: #7c3aed;
+      --accent-light: #ede9fe;
+      --accent-mid: #a78bfa;
+      --pink: #db2777;
+      --pink-light: #fce7f3;
+      --text: #1a1a2e;
+      --text-secondary: #4b5563;
+      --border: #e5e7eb;
+      --bg: #f9fafb;
+      --white: #ffffff;
+      --radius: 8px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 18px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0 0 60px 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--pink) 100%);
+      color: var(--white);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .app-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    header .update-date {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      background: rgba(255,255,255,0.15);
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .toc {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+
+    .toc h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 14px;
+      border: none;
+      padding: 0;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+    }
+
+    .toc li {
+      margin-bottom: 6px;
+    }
+
+    .toc a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 32px 36px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 24px 20px;
+      }
+      header h1 {
+        font-size: 1.6rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent-light);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 22px 0 10px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    ul, ol {
+      margin: 10px 0 14px 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    .callout {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+
+    .callout-pink {
+      background: var(--pink-light);
+      border-left: 4px solid var(--pink);
+    }
+
+    .info-block {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      margin: 16px 0;
+    }
+
+    .info-block dt {
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-secondary);
+      margin-top: 10px;
+    }
+
+    .info-block dt:first-child {
+      margin-top: 0;
+    }
+
+    .info-block dd {
+      margin: 2px 0 0 0;
+      padding-left: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin: 16px 0;
+    }
+
+    th {
+      background: var(--accent);
+      color: var(--white);
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:nth-child(even) td {
+      background: var(--bg);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+      border-top: 1px solid var(--border);
+      margin-top: 20px;
+      background: var(--white);
+    }
+
+    footer a {
+      color: var(--accent);
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 12px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    .badge-pink {
+      background: var(--pink-light);
+      color: var(--pink);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">CrushWise</div>
+  <h1>Politique de Confidentialité</h1>
+  <div class="update-date">Dernière mise à jour : 15 mai 2026</div>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>Table des matières</h2>
+    <ol>
+      <li><a href="#s1">Identité du responsable du traitement</a></li>
+      <li><a href="#s2">Données traitées et finalités</a></li>
+      <li><a href="#s3">Bases légales des traitements (RGPD)</a></li>
+      <li><a href="#s4">Sous-traitants et transferts hors Union européenne</a></li>
+      <li><a href="#s5">Absence de stockage côté éditeur</a></li>
+      <li><a href="#s6">Non-utilisation des données pour l'entraînement de modèles IA</a></li>
+      <li><a href="#s7">Absence de décision automatisée produisant des effets juridiques</a></li>
+      <li><a href="#s8">Durée de conservation des données</a></li>
+      <li><a href="#s9">Données stockées localement sur votre appareil</a></li>
+      <li><a href="#s10">Données de tiers dans vos conversations</a></li>
+      <li><a href="#s11">Protection des mineurs</a></li>
+      <li><a href="#s12">Vos droits sur vos données personnelles</a></li>
+      <li><a href="#s13">Modification de la présente politique</a></li>
+      <li><a href="#s14">Contact et réclamation auprès de la CNIL</a></li>
+    </ol>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s1">
+    <h2>1. Identité du responsable du traitement</h2>
+
+    <p>Le responsable du traitement des données à caractère personnel collectées via l'application CrushWise est :</p>
+
+    <dl class="info-block">
+      <dt>Nom</dt>
+      <dd>Alexandre Lenoir</dd>
+      <dt>Statut juridique</dt>
+      <dd>Entreprise Individuelle — régime micro-entrepreneur (immatriculation en cours)</dd>
+      <dt>Adresse</dt>
+      <dd>15 rue de Châtillon, 75014 Paris, France</dd>
+      <dt>Contact</dt>
+      <dd><a href="mailto:crushwiseapp@gmail.com">crushwiseapp@gmail.com</a></dd>
+    </dl>
+
+    <p>Cette politique de confidentialité s'applique exclusivement à l'application mobile iOS <strong>CrushWise</strong>.</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s2">
+    <h2>2. Données traitées et finalités</h2>
+
+    <h3>2.1 Données que vous fournissez lors de la configuration du profil</h3>
+    <p>Lors de votre premier accès à l'application, vous êtes invité à renseigner les informations suivantes, qui sont stockées <strong>uniquement sur votre appareil</strong> :</p>
+    <ul>
+      <li>Prénom déclaré</li>
+      <li>Tranche d'âge (18-24 ans, 25-34 ans, 35 ans et plus)</li>
+      <li>Genre déclaré (homme, femme, autre)</li>
+      <li>Situation amoureuse déclarée</li>
+      <li>Point faible et défaut déclarés en matière de drague</li>
+      <li>Préférences de style (3 paramètres ajustables de 0 à 100)</li>
+      <li>Style de réponse par défaut</li>
+    </ul>
+    <p><strong>Finalité :</strong> personnaliser les suggestions IA et le coach conversationnel en fonction de votre profil.</p>
+
+    <h3>2.2 Données relatives à l'utilisation du service</h3>
+    <p>Les données suivantes sont également stockées localement sur votre appareil :</p>
+    <ul>
+      <li>Acceptation des Conditions Générales d'Utilisation (valeur booléenne et date)</li>
+      <li>Statut de complétion de l'onboarding</li>
+      <li>Statut premium local</li>
+      <li>Compteur d'utilisation gratuite</li>
+      <li>Date de création du profil</li>
+    </ul>
+    <p><strong>Finalité :</strong> gestion du service, contrôle des accès et suivi de l'état de l'abonnement.</p>
+
+    <h3>2.3 Données transmises aux sous-traitants pour le fonctionnement de l'IA</h3>
+    <p>Afin de vous fournir les analyses et suggestions, les données suivantes sont transmises via notre infrastructure technique à Anthropic (Claude API) :</p>
+    <ul>
+      <li>Contenu textuel des conversations que vous soumettez à l'analyse</li>
+      <li>Images de captures d'écran de conversations (format base64)</li>
+      <li>Certaines préférences utilisateur (prénom, paramètres de style, préférences d'approche) nécessaires à la personnalisation des réponses, transmises lors des échanges avec le coach conversationnel</li>
+      <li>Paramètres d'analyse choisis (ton souhaité, objectif)</li>
+      <li>Historique du chat coach (durée de la session en cours uniquement)</li>
+    </ul>
+    <p><strong>Finalité :</strong> génération des réponses, suggestions et conseils par intelligence artificielle.</p>
+
+    <h3>2.4 Données sensibles</h3>
+    <p>CrushWise n'est pas conçu pour traiter des données sensibles au sens de l'article 9 du RGPD, telles que des données relatives à la santé, aux opinions politiques, aux convictions religieuses ou philosophiques, à l'orientation sexuelle, à la vie sexuelle, à l'origine raciale ou ethnique, ou à toute autre catégorie particulière de données.</p>
+
+    <p>Nous vous demandons de ne pas soumettre ce type d'informations dans les conversations analysées. Lorsque cela est possible, vous devez supprimer ou anonymiser toute information sensible avant de soumettre un contenu à CrushWise. Si une conversation contient malgré tout de telles informations, celles-ci seront traitées uniquement de manière incidente, à votre initiative, et dans le seul but de générer l'analyse ou la suggestion demandée.</p>
+
+    <h3>2.5 Données relatives à l'abonnement</h3>
+    <p>La gestion des abonnements est confiée à <strong>Apple Inc.</strong> et à <strong>RevenueCat, Inc.</strong>. Ces services traitent :</p>
+    <ul>
+      <li>Un identifiant pseudonyme (App User ID) fourni par RevenueCat</li>
+      <li>Les identifiants de vendeur Apple</li>
+      <li>L'historique des achats et événements d'abonnement</li>
+      <li>Les métadonnées techniques (version de l'application, version iOS)</li>
+    </ul>
+    <p>L'éditeur ne reçoit ni ne traite aucun moyen de paiement. Toute transaction financière est gérée exclusivement par Apple.</p>
+
+    <h3>2.6 Données techniques de journalisation</h3>
+    <p>Notre hébergeur Railway conserve des journaux techniques limités incluant les adresses IP, horodatages, codes de statut HTTP et traces d'erreurs. Ces données servent exclusivement à des fins de sécurité et de monitoring de l'infrastructure.</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s3">
+    <h2>3. Bases légales des traitements (RGPD)</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Traitement</th>
+          <th>Base légale (art. 6 RGPD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Personnalisation du service et analyse des conversations via IA</td>
+          <td><strong>Exécution du contrat</strong> — art. 6.1.b : le traitement est nécessaire à la fourniture du service auquel vous avez souscrit</td>
+        </tr>
+        <tr>
+          <td>Gestion du profil et des préférences locales</td>
+          <td><strong>Exécution du contrat</strong> — art. 6.1.b</td>
+        </tr>
+        <tr>
+          <td>Gestion de l'abonnement et de la facturation</td>
+          <td><strong>Exécution du contrat</strong> — art. 6.1.b</td>
+        </tr>
+        <tr>
+          <td>Journaux techniques de sécurité (hébergeur)</td>
+          <td><strong>Intérêt légitime</strong> — art. 6.1.f : sécurité et fiabilité de l'infrastructure</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <strong>Note :</strong> CrushWise ne traite <strong>aucune donnée</strong> sur la base du consentement (art. 6.1.a). Aucun cookie tiers, SDK publicitaire ou outil d'analytics externe n'est utilisé.
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s4">
+    <h2>4. Sous-traitants et transferts hors Union européenne</h2>
+
+    <p>CrushWise fait appel aux sous-traitants suivants pour vous fournir le service. Certains sont établis hors de l'Union européenne. Les transferts vers les États-Unis sont encadrés par les <strong>clauses contractuelles types (CCT)</strong> adoptées par la Commission européenne conformément à l'article 46 du RGPD.</p>
+
+    <h3>4.1 Anthropic, PBC <span class="badge">États-Unis</span></h3>
+    <dl class="info-block">
+      <dt>Rôle</dt>
+      <dd>Sous-traitant — génération des réponses par intelligence artificielle</dd>
+      <dt>Données transmises</dt>
+      <dd>Contenu textuel et images des conversations soumises, certaines préférences utilisateur nécessaires à la personnalisation des réponses lors de l'utilisation du coach conversationnel</dd>
+      <dt>Conservation par Anthropic</dt>
+      <dd>Anthropic peut conserver certaines données jusqu'à <strong>30 jours</strong> pour des finalités de sécurité et de surveillance des abus, conformément à ses conditions d'utilisation standards, et plus longtemps lorsque cela est requis par la loi ou nécessaire à la lutte contre les violations de ses politiques d'usage. <strong>L'option Zero Data Retention n'est pas activée à ce jour.</strong></dd>
+      <dt>Mécanisme de transfert hors UE</dt>
+      <dd>Clauses contractuelles types (art. 46 RGPD)</dd>
+      <dt>Politique de confidentialité</dt>
+      <dd><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener noreferrer">https://www.anthropic.com/legal/privacy</a></dd>
+    </dl>
+
+    <h3>4.2 RevenueCat, Inc. <span class="badge">États-Unis</span></h3>
+    <dl class="info-block">
+      <dt>Rôle</dt>
+      <dd>Sous-traitant — gestion technique des abonnements in-app</dd>
+      <dt>Données traitées</dt>
+      <dd>Identifiant pseudonyme (App User ID), identifiants de vendeur Apple, historique d'achats et événements d'abonnement, métadonnées de l'application (version, OS)</dd>
+      <dt>Mécanisme de transfert hors UE</dt>
+      <dd>Clauses contractuelles types (art. 46 RGPD)</dd>
+      <dt>Politique de confidentialité</dt>
+      <dd><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">https://www.revenuecat.com/privacy</a></dd>
+    </dl>
+
+    <h3>4.3 Apple Inc. <span class="badge">Irlande / États-Unis</span></h3>
+    <dl class="info-block">
+      <dt>Rôle</dt>
+      <dd>Distributeur de l'application (App Store) et opérateur des paiements (In-App Purchase)</dd>
+      <dt>Données traitées</dt>
+      <dd>Informations de transaction, identifiant Apple, données de facturation</dd>
+      <dt>Note</dt>
+      <dd>Apple agit en tant que responsable du traitement indépendant pour les transactions réalisées via l'App Store</dd>
+      <dt>Politique de confidentialité</dt>
+      <dd><a href="https://www.apple.com/legal/privacy/fr-ww/" target="_blank" rel="noopener noreferrer">https://www.apple.com/legal/privacy/fr-ww/</a></dd>
+    </dl>
+
+    <h3>4.4 Railway Corp. <span class="badge">États-Unis</span></h3>
+    <dl class="info-block">
+      <dt>Rôle</dt>
+      <dd>Sous-traitant — hébergement de l'infrastructure backend (transit uniquement)</dd>
+      <dt>Données traitées</dt>
+      <dd>Requêtes API en transit vers Anthropic ; journaux techniques limités : adresses IP, horodatages, codes de statut HTTP, traces d'erreurs. <strong>Aucune base de données applicative, aucun stockage des contenus utilisateur.</strong></dd>
+      <dt>Mécanisme de transfert hors UE</dt>
+      <dd>Clauses contractuelles types (art. 46 RGPD)</dd>
+      <dt>Politique de confidentialité</dt>
+      <dd><a href="https://railway.com/legal/privacy" target="_blank" rel="noopener noreferrer">https://railway.com/legal/privacy</a></dd>
+    </dl>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s5">
+    <h2>5. Absence de stockage côté éditeur</h2>
+
+    <div class="callout callout-pink">
+      <strong>Alexandre Lenoir (CrushWise) ne stocke aucune conversation, aucune image, aucun profil utilisateur ni historique relationnel dans une base de données applicative exploitée par l'éditeur. Des journaux techniques limités peuvent toutefois être conservés par l'hébergeur pour des raisons de sécurité et de bon fonctionnement.</strong>
+    </div>
+
+    <p>Les données nécessaires au fonctionnement du service transitent exclusivement par l'infrastructure backend (Railway) pour être transmises à Anthropic afin de générer les réponses IA. Ce transit ne donne lieu à aucun stockage applicatif persistant de la part de l'éditeur.</p>
+
+    <p>Les sous-traitants peuvent en revanche conserver certaines données selon leurs propres politiques :</p>
+    <ul>
+      <li><strong>Anthropic</strong> : jusqu'à 30 jours pour ses finalités de sécurité et de surveillance des abus, plus longtemps si requis par la loi ou en cas de violation des politiques d'usage</li>
+      <li><strong>Railway</strong> : journaux techniques limités, durée conforme à leurs conditions de service</li>
+      <li><strong>RevenueCat</strong> : données d'abonnement conformément à leurs conditions</li>
+      <li><strong>Apple</strong> : données de transaction conformément à ses conditions</li>
+    </ul>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s6">
+    <h2>6. Non-utilisation des données pour l'entraînement de modèles IA</h2>
+
+    <p>L'éditeur n'utilise pas les contenus soumis par les utilisateurs pour entraîner des modèles d'intelligence artificielle.</p>
+
+    <p>À la date de dernière mise à jour de cette politique, conformément aux conditions commerciales standards de l'API Anthropic, les données transmises via notre infrastructure ne sont pas non plus utilisées par Anthropic pour l'entraînement de ses modèles.</p>
+
+    <p>Cette garantie s'applique à l'ensemble des contenus textuels, images et préférences utilisateur soumis dans le cadre du service CrushWise.</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s7">
+    <h2>7. Absence de décision automatisée produisant des effets juridiques</h2>
+
+    <p>CrushWise fournit des suggestions de réponses et des analyses indicatives.</p>
+
+    <p>L'application ne prend aucune décision automatisée produisant des effets juridiques ou significatifs à votre égard au sens de l'article 22 du RGPD. Vous restez seul responsable de l'utilisation que vous faites des conseils, analyses et messages proposés par le service.</p>
+
+    <p>Les fonctionnalités d'analyse et de coach conversationnel ne sont activées que lorsque vous choisissez volontairement de soumettre un contenu via l'application.</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s8">
+    <h2>8. Durée de conservation des données</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Données</th>
+          <th>Lieu de conservation</th>
+          <th>Durée</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Profil utilisateur et préférences</td>
+          <td>Appareil local (AsyncStorage)</td>
+          <td>Jusqu'à désinstallation de l'application ou suppression manuelle</td>
+        </tr>
+        <tr>
+          <td>Conversations et images soumises</td>
+          <td>Éditeur / backend Railway</td>
+          <td><strong>Non conservées</strong> — transit uniquement</td>
+        </tr>
+        <tr>
+          <td>Conversations et images soumises</td>
+          <td>Anthropic</td>
+          <td>Jusqu'à 30 jours (abuse monitoring), plus longtemps si requis par la loi</td>
+        </tr>
+        <tr>
+          <td>Journaux techniques</td>
+          <td>Railway</td>
+          <td>Durée définie par Railway dans ses conditions</td>
+        </tr>
+        <tr>
+          <td>Données d'abonnement</td>
+          <td>RevenueCat</td>
+          <td>Durée définie par RevenueCat dans ses conditions</td>
+        </tr>
+        <tr>
+          <td>Données de transaction</td>
+          <td>Apple</td>
+          <td>Durée définie par Apple dans ses conditions</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s9">
+    <h2>9. Données stockées localement sur votre appareil</h2>
+
+    <p>CrushWise utilise le mécanisme <strong>AsyncStorage</strong> de React Native pour stocker votre profil et vos préférences directement sur votre appareil iOS. Ces données ne sont pas synchronisées ni sauvegardées sur des serveurs de l'éditeur. Certaines préférences strictement nécessaires à la personnalisation des réponses peuvent toutefois être transmises ponctuellement au service d'IA lorsque vous utilisez les fonctionnalités d'analyse ou de coach conversationnel.</p>
+
+    <p><strong>Protection :</strong> les données stockées via AsyncStorage bénéficient des mécanismes de sécurité natifs fournis par iOS. Elles ne font pas l'objet d'un chiffrement supplémentaire au niveau applicatif.</p>
+
+    <p><strong>Suppression :</strong> la désinstallation de l'application supprime l'ensemble de ces données locales. Vous pouvez également réinitialiser votre profil depuis les paramètres de l'application.</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s10">
+    <h2>10. Données de tiers dans vos conversations</h2>
+
+    <p>Les conversations que vous soumettez à l'analyse via CrushWise peuvent contenir des <strong>messages envoyés par d'autres personnes</strong>.</p>
+
+    <p>En utilisant CrushWise, vous reconnaissez :</p>
+    <ul>
+      <li>Disposer d'un droit ou d'un intérêt légitime à soumettre les conversations partagées ;</li>
+      <li>Avoir pris connaissance que ces contenus seront transmis à Anthropic pour traitement ;</li>
+      <li>Vous engager, dans la mesure du possible, à <strong>anonymiser les informations personnelles inutiles</strong> à l'analyse (noms complets, numéros de téléphone, adresses e-mail, etc.) avant de soumettre une conversation.</li>
+    </ul>
+
+    <p>CrushWise vous recommande de limiter le contenu partagé au strict nécessaire pour obtenir l'analyse souhaitée.</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s11">
+    <h2>11. Protection des mineurs</h2>
+
+    <div class="callout callout-pink">
+      CrushWise est réservé contractuellement aux personnes âgées de 18 ans et plus. La classification 17+ affichée sur l'App Store correspond au système de classification d'âge d'Apple et ne modifie pas cette condition contractuelle d'utilisation.
+    </div>
+
+    <p>L'accès au service est conditionné à la déclaration d'une tranche d'âge lors de l'onboarding. L'utilisation des tranches proposées (18-24 ans, 25-34 ans, 35+) implique que l'utilisateur confirme avoir au moins 18 ans.</p>
+
+    <p>Si nous avons connaissance qu'un mineur de moins de 18 ans utilise l'application, nous prendrons les mesures nécessaires pour mettre fin à son accès. Si vous êtes le parent ou tuteur d'un mineur qui aurait utilisé CrushWise, veuillez nous contacter à <a href="mailto:crushwiseapp@gmail.com">crushwiseapp@gmail.com</a>.</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s12">
+    <h2>12. Vos droits sur vos données personnelles</h2>
+
+    <p>Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés, vous disposez des droits suivants :</p>
+
+    <h3>12.1 Droit d'accès (art. 15 RGPD)</h3>
+    <p>Vous pouvez demander confirmation du traitement de vos données personnelles et en obtenir une copie.</p>
+
+    <h3>12.2 Droit de rectification (art. 16 RGPD)</h3>
+    <p>Vous pouvez demander la correction de données inexactes ou incomplètes. Pour les données stockées localement, vous pouvez les modifier directement dans l'application.</p>
+
+    <h3>12.3 Droit à l'effacement (art. 17 RGPD)</h3>
+    <p>Vous pouvez demander la suppression de vos données personnelles. La désinstallation de l'application supprime l'intégralité des données locales. Pour les données traitées par les sous-traitants, nous transmettrons votre demande dans les meilleurs délais.</p>
+
+    <h3>12.4 Droit à la limitation du traitement (art. 18 RGPD)</h3>
+    <p>Vous pouvez demander la suspension du traitement de vos données dans certaines circonstances (contestation de l'exactitude, opposition en cours, etc.).</p>
+
+    <h3>12.5 Droit d'opposition (art. 21 RGPD)</h3>
+    <p>Vous pouvez vous opposer au traitement de vos données fondé sur l'intérêt légitime. En cas d'opposition au traitement nécessaire à l'exécution du service, cela entraînera l'impossibilité de vous fournir les fonctionnalités concernées.</p>
+
+    <h3>12.6 Droit à la portabilité (art. 20 RGPD)</h3>
+    <p>Vous pouvez demander à recevoir vos données dans un format structuré, couramment utilisé et lisible par machine, pour les traitements fondés sur l'exécution du contrat.</p>
+
+    <h3>12.7 Retrait du consentement</h3>
+    <p>Dans les cas où un traitement serait fondé sur votre consentement, vous pouvez le retirer à tout moment sans que cela affecte la licéité du traitement antérieur au retrait.</p>
+
+    <h3>12.8 Droit de définir des directives post-mortem (art. 85-1 Loi Informatique et Libertés)</h3>
+    <p>Vous pouvez définir des directives relatives au sort de vos données après votre décès, en nous contactant par e-mail.</p>
+
+    <h3>Comment exercer vos droits</h3>
+    <div class="callout">
+      Adressez votre demande par e-mail à : <strong><a href="mailto:crushwiseapp@gmail.com">crushwiseapp@gmail.com</a></strong><br>
+      <strong>Délai de réponse :</strong> dans un délai maximum d'<strong>un mois</strong> à compter de la réception de votre demande (délai pouvant être prolongé de deux mois supplémentaires en cas de demande complexe, avec notification préalable).
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s13">
+    <h2>13. Modification de la présente politique</h2>
+
+    <p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. En cas de modification substantielle, vous serez notifié <strong>dans l'application</strong> avec un préavis d'au moins <strong>30 jours</strong> avant l'entrée en vigueur de la nouvelle version.</p>
+
+    <p>La date de dernière mise à jour affichée en haut de cette page reflète toujours la version en vigueur.</p>
+
+    <p>Si vous n'acceptez pas les traitements décrits dans la nouvelle version lorsqu'ils sont nécessaires au fonctionnement du service, vous pouvez cesser d'utiliser l'application et demander la suppression de vos données dans les conditions prévues ci-dessus.</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <section id="s14">
+    <h2>14. Contact et réclamation auprès de la CNIL</h2>
+
+    <h3>Nous contacter</h3>
+    <p>Pour toute question relative à vos données personnelles ou pour exercer vos droits :</p>
+    <div class="info-block">
+      <dt>E-mail</dt>
+      <dd><a href="mailto:crushwiseapp@gmail.com">crushwiseapp@gmail.com</a></dd>
+      <dt>Adresse postale</dt>
+      <dd>Alexandre Lenoir — CrushWise<br>15 rue de Châtillon, 75014 Paris, France</dd>
+    </div>
+
+    <h3>Réclamation auprès de la CNIL</h3>
+    <p>Si vous estimez que le traitement de vos données personnelles constitue une violation du RGPD, vous disposez du droit d'introduire une réclamation auprès de l'autorité de contrôle compétente :</p>
+    <div class="info-block">
+      <dt>Commission Nationale de l'Informatique et des Libertés (CNIL)</dt>
+      <dd>3 Place de Fontenoy, 75007 Paris<br>
+      Site web : <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">www.cnil.fr</a><br>
+      Téléphone : 01 53 73 22 22</dd>
+    </div>
+    <p>Vous pouvez saisir la CNIL directement via le formulaire disponible sur <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener noreferrer">www.cnil.fr/fr/plaintes</a>, sans avoir à exercer préalablement vos droits auprès de l'éditeur.</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>
+    <strong>CrushWise</strong> — Alexandre Lenoir, Entreprise Individuelle<br>
+    15 rue de Châtillon, 75014 Paris, France — <a href="mailto:crushwiseapp@gmail.com">crushwiseapp@gmail.com</a>
+  </p>
+  <p style="margin-top:12px;">
+    Dernière mise à jour : <strong>15 mai 2026</strong>
+  </p>
+  <p style="margin-top:16px;">
+    <a href="terms.html">Conditions Générales d'Utilisation →</a>
+  </p>
+</footer>
+
+</body>
+</html>
