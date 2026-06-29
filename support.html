@@ -5,29 +5,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Support – CrushWise</title>
 <style>
-  body { font-family: -apple-system, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
-  h1 { font-size: 1.6rem; } h2 { font-size: 1.1rem; margin-top: 28px; }
-  a { color: #7C4DFF; }
+  :root { --rose:#FF4FA0; --violet:#7C4DFF; --bg:#0F0F1A; --card:#16162A; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: #EDEDF5; margin: 0; padding: 48px 20px; line-height: 1.65; }
+  .wrap { max-width: 620px; margin: 0 auto; }
+  h1 { font-size: 2rem; margin: 0 0 8px; background: linear-gradient(90deg, var(--rose), var(--violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { color: #A0A0B5; margin-bottom: 36px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 10px; color: var(--rose); }
+  .card { background: var(--card); border-radius: 16px; padding: 20px 24px; margin-bottom: 16px; }
+  a { color: var(--violet); font-weight: 600; }
+  .q { font-weight: 700; color: #FFFFFF; margin-top: 18px; }
+  .q:first-child { margin-top: 0; }
+  .mentions { color: #8A8A9E; font-size: 0.9rem; margin-top: 32px; }
 </style>
 </head>
 <body>
-  <h1>Support CrushWise</h1>
-  <p>Une question, un problème, une suggestion ? On est là pour t'aider.</p>
+  <div class="wrap">
+    <h1>Support CrushWise</h1>
+    <p class="sub">Une question, un problème, une suggestion ? On est là pour t'aider.</p>
 
-  <h2>Nous contacter</h2>
-  <p>Écris-nous à : <a href="mailto:crushwiseapp@gmail.com">crushwiseapp@gmail.com</a><br>
-  Réponse sous 48h ouvrées.</p>
+    <h2>Nous contacter</h2>
+    <div class="card">
+      Écris-nous à : <a href="mailto:crushwiseapp@gmail.com">crushwiseapp@gmail.com</a><br>
+      Réponse sous 48h ouvrées.
+    </div>
 
-  <h2>Questions fréquentes</h2>
-  <p><strong>Comment fonctionne l'abonnement ?</strong><br>
-  3 jours d'essai gratuit, puis 6,99 €/semaine. Résiliable à tout moment depuis Réglages &gt; Abonnements sur ton iPhone.</p>
-  <p><strong>Comment annuler ?</strong><br>
-  Réglages &gt; ton nom &gt; Abonnements &gt; CrushWise &gt; Annuler.</p>
-  <p><strong>Mes conversations sont-elles stockées ?</strong><br>
-  Non. CrushWise ne conserve jamais le contenu de tes conversations.</p>
+    <h2>Questions fréquentes</h2>
+    <div class="card">
+      <div class="q">Comment fonctionne l'abonnement ?</div>
+      3 jours d'essai gratuit, puis 6,99 €/semaine. Résiliable à tout moment depuis Réglages &gt; Abonnements sur ton iPhone.
+      <div class="q">Comment annuler ?</div>
+      Réglages &gt; ton nom &gt; Abonnements &gt; CrushWise &gt; Annuler.
+      <div class="q">Mes conversations sont-elles stockées ?</div>
+      Non. CrushWise ne conserve jamais le contenu de tes conversations.
+    </div>
 
-  <h2>Mentions</h2>
-  <p>CrushWise – Alexandre Lenoir (entrepreneur individuel)<br>
-  SIRET : 10585631400015</p>
+    <p class="mentions">CrushWise – Alexandre Lenoir (entrepreneur individuel) · SIRET : 10585631400015</p>
+  </div>
 </body>
 </html>
